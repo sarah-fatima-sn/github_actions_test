@@ -1,0 +1,16 @@
+name: envdemo
+
+on:
+  pull_request:
+    branches: ['master']
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    environment: PROD
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Deployment 
+        run: echo Run PROD deployment.
