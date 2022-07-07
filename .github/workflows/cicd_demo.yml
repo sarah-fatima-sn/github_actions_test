@@ -2,9 +2,9 @@ name: cicd_demo
     
 on:
   push:
-    branches: ['feature/workflows']
+    branches: ['develop']
   pull_request:
-    branches: ['master']
+    branches: ['main']
   workflow_dispatch:
 
 jobs:
