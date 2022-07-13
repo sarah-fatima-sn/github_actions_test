@@ -22,7 +22,7 @@ jobs:
         run: mvn clean install -DskipTests=true
       
       - name: Run JUnit Tests
-        run: mvn test -Dmaven.test.failure.ignore=true surefire-report:report
+        run: mvn test -Dmaven.test.failure.ignore=false surefire-report:report
           
   integrationTest:
     needs: build
